@@ -5,25 +5,28 @@
 <body>
 <h1>Tent Chat Privacy Policy</h1>
 <p><em>Last updated: October 13, 2026</em></p>
-<p>Tent Chat is an offline messenger. It is designed to collect nothing about you.</p>
+<p>Tent Chat is a messenger that works without the internet. It is designed to collect nothing about you. It works offline only unless you turn on its optional online features.</p>
 <h2>What we collect</h2>
-<p>Nothing. Tent Chat has no servers, no accounts and no analytics. We (the developer) never receive your messages, contacts, name, location or any other data.</p>
+<p>Nothing. Tent Chat has no servers, no accounts and no analytics. We (the developer) never receive your messages, contacts, name, location or any other data, in offline or online mode.</p>
 <h2>How messages travel</h2>
-<p>Messages go directly between nearby phones over Bluetooth and phone-to-phone Wi-Fi and may be relayed by other nearby phones in the mesh. Wi-Fi links between iPhones are encrypted. Private chats and Chat Rooms are end-to-end encrypted, so relaying phones cannot read them. Campfire and public channel messages are public to anyone nearby.</p>
-<p>If you use a LoRa radio board, messages also travel between your phone and the board over Bluetooth and between boards over radio. Private chats stay end-to-end encrypted. Messages on public Meshtastic channels can be read by anyone nearby with a compatible radio.</p>
+<p>Messages go directly between nearby phones over Bluetooth and phone-to-phone Wi-Fi and may be relayed by other nearby phones in the mesh. Wi-Fi links between iPhones are encrypted. Private chats and groups are end-to-end encrypted, so relaying phones cannot read them. Campfire and public channel messages are public to anyone nearby.</p>
+<p>If you use a LoRa radio board, messages also travel between your phone and the board over Bluetooth and between boards over radio. Private chats stay end-to-end encrypted. Messages on public Meshtastic channels can be read by anyone nearby with a compatible radio. Relay boxes nearby may also carry your messages; they cannot read private ones.</p>
 <h2>What stays on your phone</h2>
-<p>Your screen name, encryption keys, messages and settings are stored only on your device. Keys are kept in the iOS Keychain and never leave the device. App data is excluded from iCloud and computer backups. "Wipe Everything" (or triple-tapping the main title) erases it all.</p>
+<p>Your screen name, encryption keys, messages and settings are stored only on your device. Keys are kept in the iOS Keychain and never leave the device. App data is excluded from iCloud and computer backups. "Wipe everything" in your Profile erases it all.</p>
 <h2>Permissions</h2>
 <ul>
-<li><b>Bluetooth</b>: to send and receive messages with nearby phones.</li>
+<li><b>Bluetooth</b>: to send and receive messages with nearby phones and your LoRa radio board.</li>
+<li><b>Local network</b>: to link directly with nearby Tent Chat iPhones over Wi-Fi. No router or internet is used.</li>
 <li><b>Microphone</b>: only while you record a voice message or use walkie-talkie.</li>
 <li><b>Camera</b>: only to scan a buddy's verification QR code.</li>
 <li><b>Photos</b>: only when you choose a photo to share.</li>
 <li><b>Notifications</b>: to alert you to new messages.</li>
-<li><b>Location</b>: never used. Tent Chat does not request location access.</li>
+<li><b>Location</b>: only if you turn on online features, and only while you use location channels, the internet bridge or location notes. It is used on your phone to work out a coarse area code (a "geohash"); exact coordinates are never put in messages. In offline mode Tent Chat never uses your location.</li>
 </ul>
 <h2>Internet</h2>
-<p>Tent Chat never connects to the internet.</p>
+<p>When you first open Tent Chat you choose <b>offline only</b> or <b>online features on</b>, and you can change it any time.</p>
+<p><b>Offline only:</b> Tent Chat never connects to the internet.</p>
+<p><b>Online features on:</b> Tent Chat can also connect to public, independently run Nostr relays, through Tor by default, to deliver end-to-end encrypted messages to mutual favorites who are far away, to join location channels for your area, and to link meshes in different places (the internet bridge). Messages in location channels are public to people in that area and carry only the coarse area code, not your exact location. These relays are not run by us, and we receive nothing from them.</p>
 <h2>Children</h2>
 <p>Tent Chat is not directed at children under 13.</p>
 <h2>Contact</h2>
